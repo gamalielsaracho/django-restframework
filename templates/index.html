@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+
+		<div class="row center-xs center-sm center-md center-lg">
+			<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+				<h1>Todo list</h1>
+
+				<form id="formTask" createData=true>
+				  <div class="form-group">
+				    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Task">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+				  
+				  <button type="submit" class="btn btn-primary">Send</button>
+				</form>
+
+				<div id="tasksList" >
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+{% endblock %}
